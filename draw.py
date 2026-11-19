@@ -55,8 +55,12 @@ d.text((lx + 14, ly + 114),
        "set for Thursday in China.",
        font=font(SANS, 21), fill=INK)
 d.text((lx + 14, ly + 142),
-       "Xi hits protectionism; Putin hits sanctions.",
+       "Trade, Ukraine and Iran on the table.",
        font=font(SANSB, 19), fill=RED)
+# Small calendar badge tucked under the lead headline, left of the flags
+d.rectangle([lx + 14, ly + 176, lx + 114, ly + 256], fill=NAVY, outline=INK, width=2)
+d.text((lx + 28, ly + 184), "WED 18", font=font(SANSB, 20), fill=(255, 214, 90))
+d.text((lx + 24, ly + 212), "NOV 2026", font=font(SANSB, 16), fill=WHITE)
 # Three flags on the right: China, Russia, USA
 for i, lab in enumerate(["CHINA", "RUSSIA", "USA"]):
     fx = 560 + i * 145
@@ -138,8 +142,13 @@ d.text((ax + 12, y3 + 112), "Ninth Senate flip of the midterms;",
        font=font(SANS, 18), fill=INK)
 d.text((ax + 12, y3 + 134), "largest majority since 2009.",
        font=font(SANS, 18), fill=INK)
-d.text((ax + 12, y3 + 168), "Democrat beats Dan Sullivan in Alaska.",
+d.text((ax + 12, y3 + 168), "Democrat beats Sullivan.",
        font=font(SANSB, 17), fill=NAVY)
+# Senate bar chart, right of the body text: Democrats 56 in blue, Republicans 44 in red
+d.text((ax + 330, y3 + 108), "56 DEM", font=font(SANSB, 16), fill=BLUE)
+d.rectangle([ax + 330, y3 + 130, ax + 330 + 112, y3 + 150], fill=BLUE, outline=INK, width=2)
+d.rectangle([ax + 330, y3 + 158, ax + 330 + 88, y3 + 178], fill=RED, outline=INK, width=2)
+d.text((ax + 424, y3 + 158), "44 GOP", font=font(SANSB, 16), fill=RED)
 
 nx, nw = 520, 488
 d.rounded_rectangle([nx, y3, nx + nw, y3 + h3], radius=10,

@@ -45,6 +45,25 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
 `entry.png` is 1024×1024, about 109 KB, well under the 1 MiB limit.
 
+## How the picture was made
+
+`draw.py` paints the whole page with Pillow and DejaVu fonts — no photos,
+no network, no random numbers. The masthead names the day, the lead card
+carries the Shenzhen summit with three hand-drawn flags and a small
+calendar badge, and each later card pairs a headline with a simple
+pictogram: flames over a tanker, a broken bridge span, a 56–44 Senate
+bar chart, and virus dots for the Ebola story. Every headline was
+checked against the day's reporting before it was drawn, and the
+bottom strip carries the stories that did not fit in a full card.
+
+## Sources checked on 19 November 2026
+
+Reuters, AP and AFP digests for 18 November 2026, plus the day's
+briefings from Open Chronicle, Zark News and The Daily Short — the
+Shenzhen meeting, the Kuwait and Bahrain intercepts, the renewed
+Kerch Bridge attack, the Alaska result, the Congo case count, and
+the Nvidia and Voyager 1 figures all appear in more than one of them.
+
 ## License
 
 MIT — see `LICENSE`.
